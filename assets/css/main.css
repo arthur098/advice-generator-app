@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+html {
+    background-color: #202632;
+    font-family: Manrope, sans-serif;
+}
+
+@media only screen and (min-width: 633px) {
+    .card {
+        background-color: #313a49;
+        border-radius: 5px;
+        padding: 25px;
+        width: 418px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .card {
+        background-color: #313a49;
+        border-radius: 5px;
+        padding: 25px;
+        width: 75%;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.center-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#advice-header {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#advice-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 22px;
+}
+
+#divider {
+    width: 100%;
+}
+
+#new-advice-generator-btn {
+    text-align: center;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    padding: 8px 10px 6px 10px;
+    margin: 6px -17px;
+    position: absolute;
+}
+
+#new-advice-generator-btn > img {
+    margin: 0;
+    width: 15px;
+}
+
+#new-advice-generator-btn:hover {
+    box-shadow: hsl(150, 100%, 66%) 0 0 15px;
+}
+
+#btn-image {
+    text-indent: -99999px;
+    background-image: url("../img/icon-dice.svg");
+    background-repeat: no-repeat;
+}
